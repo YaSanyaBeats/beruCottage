@@ -56,6 +56,10 @@ const requireDir = require("require-dir"),
         gzip: {
             src: "./src/.htaccess",
             dist: "./dist/"
+        },
+        files: {
+            src: "./src/files/**/*",
+            dist: "./dist/files/"
         }
     };
 
@@ -64,10 +68,10 @@ requireDir("./gulp-tasks/");
 export { paths };
 
 export const development = gulp.series("clean",
-    gulp.parallel(["views", "styles", "scripts", "images", "webp", "sprites", "fonts", "favicons"]),
+    gulp.parallel(["views", "styles", "scripts", "images", "webp", "sprites", "fonts", "favicons", "files"]),
     gulp.parallel("serve"));
 
 export const prod = gulp.series("clean",
-    gulp.parallel(["views", "styles", "scripts", "images", "webp", "sprites", "fonts", "favicons", "gzip"]));
+    gulp.parallel(["views", "styles", "scripts", "images", "webp", "sprites", "fonts", "favicons", "gzip", "files"]));
 
 export default development;

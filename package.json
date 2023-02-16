@@ -75,6 +75,7 @@
     },
     "dependencies": {
         "dev-ip": "^1.0.1",
+        "simple-parallax-js": "^5.6.2",
         "swiper": "^9.0.3",
         "webpack": "^5.70.0",
         "webpack-stream": "^7.0.0"

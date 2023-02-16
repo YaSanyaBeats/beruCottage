@@ -13,11 +13,14 @@ html, body {
 }
 
 body {
-    font-family: sans-serif;
+    font-family: "Montserrat", sans-serif;
     min-height: 100vh;
     scroll-behavior: smooth;
     display: flex;
     flex-direction: column;
+    background-image: linear-gradient(to top, rgba(0,0,0,0.6), rgba(0,0,0,0.6)), url('../img/bg.jpg');
+    background-size: cover;
+    font-size: 10px;
 }
 
 main {
@@ -32,4 +35,25 @@ footer {
     margin: auto;
     padding: 0 15px;
     max-width: 1430px;
+}
+
+.section-title {
+    font-size: 6.4em;
+}
+
+.animate-link {
+    position: relative;
+    &::after {
+        content: '';
+        position: absolute;
+        left: 0;
+        bottom: -3px;
+        width: 0;
+        height: 2px;
+        background-color: white;
+        transition: .3s;
+    }
+    &:hover::after {
+        width: 100%;
+    }
 }

@@ -1,0 +1,23 @@
+.header {
+    min-height: 150px;
+    &__container {
+        position: absolute;
+    }
+    &__menu {}
+    &__logo-wrapper {}
+}
+.container {
+}
+.header-menu {
+}
+.menu {
+    &__list {
+        display: flex;
+        align-items: center;
+        flex-wrap: wrap;
+        gap: 50px;
+        list-style: none;
+    }
+    &__elem {}
+    &__link {}
+}

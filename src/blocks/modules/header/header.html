@@ -1,3 +1,32 @@
 <header class="header">
-    <h2>Header</h2>
+    <div class="header__container container">
+        <nav class="header__menu header-menu">
+            <ul class="menu__list">
+                <li class="menu__elem">
+                    <a href="#" class="menu__link">Проекты</a>
+                </li>
+                <li class="menu__elem">
+                    <a href="#" class="menu__link">Комплектация</a>
+                </li>
+                <li class="menu__elem">
+                    <a href="#" class="menu__link">Производство</a>
+                </li>
+                <li class="menu__elem">
+                    <a href="#" class="menu__link">Технологии</a>
+                </li>
+                <li class="menu__elem">
+                    <a href="#" class="menu__link">Галерея</a>
+                </li>
+                <li class="menu__elem">
+                    <a href="#" class="menu__link">Контакты</a>
+                </li>
+            </ul>
+        </nav>
+        <div class="header__logo-wrapper">
+            @@include('../helper/svg.html', {
+                "class": "header__logo",
+                "id": "logo"
+            })
+        </div>
+    </div>
 </header>

@@ -1,0 +1,26 @@
+.about {
+    &__container {
+        display: flex;
+        justify-content: space-between;
+    }
+    &__left {
+        flex: 0 0 660px;
+        height: 660px;
+        
+    }
+    &__img {
+        background: rgba(0, 0, 0, 0.092);
+        border: 1px solid rgba(129, 129, 129, 0.5);
+        box-shadow: inset 44px -44px 44px rgba(194, 194, 194, 0.092), inset -44px 44px 44px rgba(255, 255, 255, 0.092);
+        backdrop-filter: blur(20px);
+        border-radius: 50%;
+        display: block;
+        width: 100%;
+        padding: 115px 20px;
+    }
+    &__right {}
+    &__title {}
+    &__text {}
+}
+.container {
+}

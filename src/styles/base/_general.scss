@@ -20,8 +20,10 @@ body {
     flex-direction: column;
     background-image: linear-gradient(to top, rgba(0,0,0,0.6), rgba(0,0,0,0.6)), url('../img/bg.jpg');
     background-size: cover;
+    background-attachment: fixed;
     font-size: 10px;
     color: white;
+    overflow: hidden;
 }
 
 h1, h2, h3, h4, h5, h6 {
@@ -81,4 +83,8 @@ button {
         background-position: 0 0%;
         transform: scale(1.05);
     }
+}
+
+section {
+    margin-top: 150px;
 }

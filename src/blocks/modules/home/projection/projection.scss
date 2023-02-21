@@ -1,0 +1,109 @@
+.projection {
+    &__container {}
+    &__info {
+        display: flex;
+        justify-content: space-between;
+        gap: 150px;
+        margin-top: 140px;
+    }
+    &__left {}
+    &__video-preview {
+        width: 700px;
+        height: 430px;
+        background: rgba(217, 217, 217, 0.1);
+        box-shadow: inset 38px -38px 38px rgba(165, 165, 165, 0.1), inset -38px 38px 38px rgba(255, 255, 255, 0.1);
+        backdrop-filter: blur(40px);
+        border-radius: 25px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        transition: .3s;
+        cursor: pointer;
+        &:hover {
+            transform: scale(1.05);
+        }
+    }
+    &__right {}
+    &__title {
+        font-size: 2.4em;
+        line-height: 3.3rem;
+        font-weight: 600;
+    }
+    &__list {}
+    &__list-elem {
+        font-size: 2em;
+        line-height: 2.8rem;
+        margin-top: 30px;
+    }
+    &__quote {}
+}
+.container {
+}
+.section-title {
+}
+.projection-quote {
+    margin-top: 100px;
+    margin-bottom: 100px;
+    background: rgba(255, 255, 255, 0.078);
+    border: 1px solid rgba(255, 255, 255, 0.27);
+    box-shadow: inset 27.8px -27.8px 27.8px rgba(165, 165, 165, 0.078), inset -27.8px 27.8px 27.8px rgba(255, 255, 255, 0.078);
+    backdrop-filter: blur(13px);
+    border-radius: 20px;
+    display: flex;
+    justify-content: space-between;
+    gap: 180px;
+    overflow: hidden;
+    &__img-wrapper {
+        height: 410px;
+        width: 380px;
+        flex: 0 0 380px;
+        position: relative;
+        &::after {
+            content: '';
+            position: absolute;
+            right: -60px;
+            top: 70px;
+            bottom: 70px;
+            width: 1px;
+            background-color: white;
+        }
+    }
+    &__img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+    &__text-wrapper {
+        margin: 25px 90px 25px 0;
+    }
+    &__text {
+        font-size: 2em;
+        font-weight: 600;
+        line-height: 2.8rem;
+        margin-bottom: 50px;
+    }
+    &__row {
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-end;
+    }
+    &__name-wrapper {
+        display: flex;
+        flex-direction: column;
+        gap: 5px;
+    }
+    &__name {
+        font-size: 2.4em;
+        font-weight: 600;
+    }
+    &__post {
+        font-size: 1.6em;
+        font-weight: 600;
+    }
+    &__link {
+        color: white;
+        font-size: 2em;
+    }
+}
+.button {
+}

@@ -1,0 +1,43 @@
+.blog {
+    &__cards {
+
+        margin: 100px 0;
+
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 250px 250px;
+        gap: 70px 170px;
+
+        &-item {
+            box-shadow: 500px 500px 100px 100px rgba(0, 0, 0, 0.5) inset;
+            border-radius: 18px;
+
+            background-position: 50% 50%;
+            background-size: cover;
+
+            display: flex;
+            justify-content: flex-start;
+            align-items: end;
+            padding: 40px 30px;
+
+            text-decoration: none;
+            color: #fff;
+
+            transition: .4s;
+        }
+
+        &-item:hover {
+            padding: 45px 35px;
+            scale: 1.03;
+        }
+    }
+
+    &__card {
+        &-title {
+            font-weight: 400;
+            font-size: 2.4em;
+            line-height: 29px;
+        }
+    }
+
+}

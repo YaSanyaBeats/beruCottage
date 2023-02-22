@@ -112,3 +112,23 @@ section {
         font-size: 15px;
     }
 }
+
+.swiper-pagination-bullet {
+    width: 15px;
+    height: 15px;
+    border: 1px solid white;
+    opacity: 1;
+    border-radius: 50%;
+    background-color: transparent;
+    transition: .3s;
+    &-active {
+        background-color: white;
+        border-color: transparent;
+        width: 10px;
+        height: 10px;
+    }
+}
+
+.swiper-slide {
+    padding-bottom: 50px;
+}

@@ -17,6 +17,30 @@
         display: grid;
         grid-template-columns: 1fr 1fr;
         gap: 100px 170px;
+        &_three {
+            grid-template-columns: 1fr 1fr 1fr;
+            gap: 85px 70px;
+            & .project-card {
+                &__img {
+                    width: 360px;
+                }
+                &__title {
+                    font-size: 1.8em;
+                }
+                &__price {
+                    font-size: 1.8em;
+                }
+            }
+            & .tiles {
+                &__text {
+                    font-size: 1.2em;
+                }
+                &__icon {
+                    width: 20px;
+                    height: 20px;
+                }
+            }
+        }
     }
     &__card {}
 }

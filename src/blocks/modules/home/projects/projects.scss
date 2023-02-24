@@ -43,6 +43,17 @@
         }
     }
     &__card {}
+
+    &__title {
+
+        margin-bottom: 15px;
+
+        &-line {
+            height: 2px;
+            width: 130px;
+            border-bottom: 2px solid #FF971E;
+        }
+    }
 }
 .container {
 }
@@ -111,6 +122,119 @@
     &:hover {
         & .project-card__img {
             transform: scale(1.05);
+        }
+    }
+}
+
+@media (max-width: 1400px) {
+    .projects__cards {
+        gap: 50px 50px;
+        &_three {
+            & .project-card {
+            }
+        }
+    }
+}
+
+@media (max-width: 1250px) {
+    .projects__cards {
+        &_three {
+            & .project-card {
+                &__img {
+                    width: 250px;
+                }
+
+                &__info {
+                    flex-direction: column;
+                }
+                
+                &__title {
+                    margin-bottom: 10px;
+                    text-align: center;
+                }
+
+                &__price {
+                    text-align: right;
+                }
+            }
+
+            & .tiles {
+                &__elem {
+                    flex-direction: column;
+                }
+            }
+        }
+    }
+
+    .projects__tabs {
+        &_three {
+            & .project-tab {
+                &__img {
+                    left: 0;
+                    bottom: -40px;
+                }
+
+                &:hover {
+                    & .project-tab__img {
+                        left: 0;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: 992px) {
+    .projects__cards {
+        &_three {
+            grid-template-columns: 1fr 1fr;
+            & .project-card {
+                &__img {
+                    width: 100%;
+                }
+            }
+        }
+    }
+
+    .projects__tabs {
+        &_three {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 50px;
+
+            & .project-tab {
+                &__img {
+                    width: 250px;
+                    left: 0;
+                    bottom: -10px;
+                }
+
+                &:hover {
+                    & .project-tab__img {
+                        left: 0;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: 576px) {
+    .projects__cards {
+        &_three {
+            grid-template-columns: 1fr;
+        }
+    }
+
+    .projects__tabs {
+        &_three {
+            grid-template-columns: 1fr;
+
+            & .project-tab {
+                &__title {
+                    text-align: center;
+                }
+            }
         }
     }
 }

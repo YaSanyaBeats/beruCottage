@@ -24,6 +24,11 @@
         z-index: 1;
 
         pointer-events: none;
+
+        animation-duration: 30s;
+        animation-iteration-count: infinite;
+        animation-timing-function: cubic-bezier(.59,.01,.51,1);
+        animation-name: clouds;
     }
 
     &__logo {
@@ -92,3 +97,17 @@
         width: 100%;
     }
 }
+
+@keyframes clouds {
+    from {
+      transform: translateX(380px) scaleX(2);
+    }
+
+    50% {
+        transform: translateX(-380px) scaleX(2);
+    }
+  
+    to {
+        transform: translateX(380px) scaleX(2);
+    }
+  }

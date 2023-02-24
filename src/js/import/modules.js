@@ -6,6 +6,7 @@ import "%modules%/header/header";
 
 import "%modules%/home/hero/hero";
 import "%modules%/home/advantages/advantages";
+import "%modules%/single-product/single-product";
 
 /* Footer */
 

@@ -1,0 +1,371 @@
+.single-product {
+
+    &__title {
+
+        margin-bottom: 15px;
+
+        &-line {
+            height: 2px;
+            width: 130px;
+            border-bottom: 2px solid #FF971E;
+        }
+    }
+}
+
+.product {
+    &__info {
+
+        margin-top: 150px;
+
+        display: flex;
+        gap: 50px;
+
+        &-left {
+            width: 50%;
+        }
+
+        &-right {
+
+            & h2 {
+                font-size: 3.6em;
+                margin-bottom: 60px;
+                font-weight: 700;
+            }
+            & .tiles {
+
+                background: rgba(255, 255, 255, 0.078);
+                border: 1px solid rgba(255, 255, 255, 0.27);
+                box-shadow: inset 27.8px -27.8px 27.8px rgba(165, 165, 165, 0.078), inset -27.8px 27.8px 27.8px rgba(255, 255, 255, 0.078);
+                backdrop-filter: blur(13.344px);
+                /* Note: backdrop-filter has minimal browser support */
+
+                border-radius: 18px;
+
+                margin-bottom: 30px;
+
+                &__text {
+                    font-size: 1.2em;
+                }
+                &__icon {
+                    width: 20px;
+                    height: 20px;
+                }
+            }
+        }
+
+        &-tiles {
+            &-elem {
+                display: flex;
+                align-items: center;
+                padding: 20px 10px;
+
+                &:not(:last-child){
+                    border-right: 1px solid #ABB0B3;
+                }
+            }
+
+            &-text {
+                font-size: 1.5em;
+                margin-left: 10px;
+            }
+        }
+
+        &-mainimg {
+            background: rgba(255, 255, 255, 0.078);
+            border: 1px solid rgba(255, 255, 255, 0.27);
+            box-shadow: inset 27.8px -27.8px 27.8px rgba(165, 165, 165, 0.078), inset -27.8px 27.8px 27.8px rgba(255, 255, 255, 0.078);
+            backdrop-filter: blur(13.344px);
+            border-radius: 18px;
+
+            & img {
+                width: 100%;
+            }
+        }
+
+        &-slides {
+            display: flex;
+            gap: 30px;
+
+            margin-top: 30px;
+        }
+
+        &-slide {
+            background: rgba(255, 255, 255, 0.078);
+            border: 1px solid rgba(255, 255, 255, 0.27);
+            box-shadow: inset 27.8px -27.8px 27.8px rgba(165, 165, 165, 0.078), inset -27.8px 27.8px 27.8px rgba(255, 255, 255, 0.078);
+            backdrop-filter: blur(13.344px);
+            /* Note: backdrop-filter has minimal browser support */
+
+            border-radius: 17px;
+
+            padding: 15px;
+        }
+
+        &-slide img {
+            width: 100%;
+        }
+
+        &-button {
+            font-size: 2em;
+            margin-bottom: 30px;
+        }
+
+        &-price {
+            font-weight: 700;
+            font-size: 3.6em;
+            margin-bottom: 30px;
+        }
+
+        &-buttons {
+            display: flex;
+            justify-content: space-between;
+            gap: 30px;
+        }
+    }
+
+    &__complects {
+        display: flex;
+        gap: 60px;
+
+        margin-bottom: 30px;
+
+        &-title {
+            font-size: 2.4em;
+        }
+
+        &-price {
+            font-weight: 700;
+            font-size: 2.4em;
+        }
+    }
+
+    &__ipoteka {
+        background: linear-gradient(0deg, rgba(0, 0, 0, 0.78), rgba(0, 0, 0, 0.78)), url('/img/single-product/ipoteka-bg.png');
+        border: 1px solid rgba(255, 255, 255, 0.27);
+        box-shadow: inset 27.8px -27.8px 27.8px rgba(165, 165, 165, 0.078), inset -27.8px 27.8px 27.8px rgba(255, 255, 255, 0.078);
+        backdrop-filter: blur(13.344px);
+        /* Note: backdrop-filter has minimal browser support */
+        
+        border-radius: 18px;
+
+        padding: 20px 30px;
+
+        display: flex;
+        justify-content: space-between;
+        
+        width: 450px;
+
+        margin-bottom: 30px;
+
+        &-title {
+            font-weight: 700;
+            font-size: 3.2em;
+
+            color: #FF971E;
+
+            text-transform: uppercase;
+            margin-bottom: 20px;
+        }
+
+        &-percent {
+            font-size: 3.2em;
+            text-transform: uppercase;
+        }
+    }
+
+    &__content {
+
+        margin-bottom: 150px;
+
+        &-title {
+            font-size: 2.4em;
+
+            margin-top: 150px;
+        }
+
+        &-underline {
+            margin-top: 10px;
+            border-bottom: 2px solid #fff;
+            width: 130px;
+        }
+
+        &-text {
+            font-weight: 700;
+            font-size: 3em;
+
+            margin: 100px 0;
+        }
+
+        &-model {
+            
+            margin-top: 100px;
+
+            & img {
+                width: 100%;
+            }
+        }
+    }
+
+    &__swiper {
+        margin-top: 100px;
+    }
+
+    &__slide-img {
+        width: 100%;
+    }
+}
+
+.button {
+    &-transparent {
+        background: transparent;
+        border: 1px solid #E7A354;
+
+        transition: .4s;
+
+        &:hover {
+            background: linear-gradient(to bottom, #d87f19 2%, #FF971E 25%, #E7A354 90%);
+        }
+    }
+}
+
+@media (max-width: 992px) {
+    .product {
+        &__info {
+
+            &-left {
+                width: 50%;
+            }
+
+            &-right {
+
+                width: 50%;
+
+                & h2 {
+                    font-size: 2.5em;
+                }
+            }
+
+            &-price {
+                font-size: 2.5em;
+            }
+
+            &-tiles {
+                &-elem {
+                    flex-direction: column;
+                }
+
+                &-text {
+                    margin-top: 10px;
+                    text-align: center;
+                }
+            }
+
+            &-buttons {
+                gap: 15px;
+            }
+
+            &-button {
+                font-size: 1.6em;
+
+                padding: 15px 30px;
+            }
+        }
+
+        &__complects {
+            &-title, &-price {
+                font-size: 1.8em;
+            }
+        }
+
+        &__ipoteka {
+            width: 350px;
+
+            &-title, &-percent {
+                font-size: 2.5em;
+            }
+
+            &-left {
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+            }
+        }
+
+        &__content {
+            &-text {
+                font-size: 1.8em;
+            }
+        }
+    }
+}
+
+@media (max-width: 768px) {
+    .product {
+        &__info {
+
+            margin-top: 60px;
+
+            display: block;
+
+            &-left, &-right {
+                width: 100%;
+            }
+
+            &-right {
+                margin-top: 60px;
+
+                & h2 {
+                    margin-bottom: 30px;
+                }
+            }
+
+            &-buttons {
+                justify-content: flex-start;
+            }
+
+            &-tiles {
+                &-text {
+                    margin-left: 0;
+                }
+            }
+
+            &-slides {
+                margin-top: 15px;
+                gap: 15px;
+            }
+
+            &-slide {
+                padding: 5px;
+            }
+        }
+
+        &__content {
+
+            margin-bottom: 60px;
+
+            &-title {
+                margin-top: 70px;
+            }
+
+            &-text {
+                margin: 40px 0;
+            }
+
+            & button {
+                font-size: 1.8em;
+            }
+
+            &-model {
+                margin-top: 60px;
+            }
+        }
+
+        &__swiper {
+            margin-top: 40px;
+        }
+
+        &__ipoteka {
+            width: 100%;
+        }
+    }
+}
